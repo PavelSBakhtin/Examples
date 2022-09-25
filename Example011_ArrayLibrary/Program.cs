@@ -20,7 +20,28 @@ void PrintArray(int[] col)
     }
 }
 
+int IndexOf(int[] collection, int find)
+{
+    int count = collection.Length;
+    int index = 0;
+    int position = -1;
+    while (index < count)
+    {
+        if (collection[index] == find)
+        {
+            position = index;
+            break; // если его убрать, то программа покажет последнее вхождение (про нескольких одинаковых числах в массиве), с ним - покажет позицию первого вхождения
+        }
+        index++;
+    }
+    return position;
+}
+
 int[] array = new int[10];
 
 FillArray(array);
 PrintArray(array);
+Console.WriteLine();
+
+int pos = IndexOf(array, 4);
+Console.WriteLine(pos);
