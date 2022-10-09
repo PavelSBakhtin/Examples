@@ -1,7 +1,7 @@
 ﻿Console.Write("Enter your name: ");
-string username = Console.ReadLine();
+string username = Console.ReadLine() ?? "0";
 
-if(username.ToLower() == "paul")
+if (username.ToLower() == "paul")
 {
     Console.WriteLine("Wow, that's Paul !!!");
 }
