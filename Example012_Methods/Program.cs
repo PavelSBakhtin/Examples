@@ -4,7 +4,7 @@ void Method1()
     Console.WriteLine("Автор ...");
 }
 // Вызов:
-// Method1();
+Method1();
 
 // // // Вид2. Аргументы принимают, ничего не возвращают
 void Method2(string msg)
@@ -12,7 +12,7 @@ void Method2(string msg)
     Console.WriteLine(msg);
 }
 // Вызов:
-// Method2("Текст сообщения"); // Не именнованный аргумент
+Method2("Текст сообщения"); // Не именнованный аргумент
 
 // // Метод с именнованным аргументом (их может быть несколько)
 void Method21(string msg, int count)
@@ -25,7 +25,7 @@ void Method21(string msg, int count)
     }
 }
 // Вызов:
-// Method21(msg: "Текст", count: 4);
+Method21(msg: "Текст", count: 4);
 // Method21(count: 4, msg: "новый текст");
 
 // // // Вид 3. Ничего не принимают, результат возвращают
@@ -159,6 +159,6 @@ void SelectionSortFromMax(int[] array) // сортирует элементы м
 
 // Вызов:
 PrintArray(arr);
-// SelectionSortFromMin(arr);
-// SelectionSortFromMax(arr);
+SelectionSortFromMin(arr); // Убрать, если не надо
+SelectionSortFromMax(arr); // Убрать, если не надо
 PrintArray(arr);
